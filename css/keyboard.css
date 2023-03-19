@@ -1,0 +1,38 @@
+body {
+    width: 100%;
+    height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+[id^="row"] {
+    display: flex;
+    flex-direction: row;
+}
+
+[id^="row"] + [id^="row"] {
+    margin-top: 5px;
+}
+
+.keybutton {
+    width: 80px;
+    height: 80px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keybutton + .keybutton {
+    margin-left: 5px;
+}
